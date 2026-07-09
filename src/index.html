@@ -1,26 +1,43 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <script src="https://yandex.st/jquery/2.2.3/jquery.min.js" type="text/javascript"></script>
-    <script src='https://npmcdn.com/@turf/turf/turf.min.js'></script>
-    <script src="info_panel.js"></script>
-    <script src="description_panel.js"></script>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="https://yandex.st/bootstrap/2.2.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="loader.css">
-    <link rel="stylesheet" href="info_panel.css">
+  <script src="js/hawk.js" onload="
+            const hawk = new HawkCatcher({token: 'eyJpbnRlZ3JhdGlvbklkIjoiMzY1Y2MxYWUtOGE5My00YjY1LTk3NTktNGVhOGM4YzA3NjFmIiwic2VjcmV0IjoiOWUxNTc5YTMtYTQxZi00MTUyLTkyZWQtMmIwYTFhZGVlNTViIn0='})
+            ">
+            </script>
 
-    <script src="https://telegram.org/js/telegram-web-app.js"></script>
-    <script src="telegram.js"></script>
+  <!-- 
+  Debug tool  
+  <script src="//cdn.jsdelivr.net/npm/eruda"></script>
+  <script>eruda.init()</script>
+  -->
 
-    <title>Карта Поисковика ЛизаАлерт</title>
+  <script src="https://yandex.st/jquery/2.2.3/jquery.min.js" type="text/javascript"></script>
+  <script src='https://cdn.jsdelivr.net/npm/@turf/turf/turf.min.js'></script>
+  <script src="js/types.js"></script>
+  <script src="js/info_panel.js"></script>
+  <script src="js/description_panel.js"></script>
+  <script src="js/balloon.js"></script>
+  <script src="js/controls.js"></script>
 
-  </head>
-  <body>
+  <link href="https://yandex.st/bootstrap/2.2.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/loader.css">
+  <link rel="stylesheet" href="css/info_panel.css">
+
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <script src="js/telegram.js"></script>
+
+  <title>Карта Поисковика ЛизаАлерт</title>
+
+</head>
+
+<body>
   <div id="map"></div>
-  </body>
+</body>
+
 </html>

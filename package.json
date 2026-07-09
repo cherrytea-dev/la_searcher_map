@@ -1,0 +1,23 @@
+{
+  "name": "la-searcher-map",
+  "version": "1.0.0",
+  "private": true,
+  "description": "LizaAlert Searcher Map — interactive map for tracking lost people searches",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest --config tests/jest.config.js",
+    "test:watch": "jest --config tests/jest.config.js --watch",
+    "test:coverage": "jest --config tests/jest.config.js --coverage",
+    "typecheck": "tsc --noEmit",
+    "deploy": "node deploy.js",
+    "deploy:dry-run": "node deploy.js --dry-run"
+  },
+  "devDependencies": {
+    "@aws-sdk/client-s3": "^3.1055.0",
+    "glob": "^11.1.0",
+    "jest": "^30.4.2",
+    "jest-environment-jsdom": "^30.4.1",
+    "mime-types": "^2.1.35",
+    "typescript": "^6.0.3"
+  }
+}

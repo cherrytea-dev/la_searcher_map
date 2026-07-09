@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "ESNext",
+    "allowJs": true,
+    "checkJs": true,
+    "noEmit": true,
+    "strict": false,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "skipLibCheck": true
+  },
+  "include": ["src/js/**/*.js", "src/js/**/*.d.ts"],
+  "exclude": [
+    "src/js/hawk.js",
+    "src/js/yandex_rounded_controls.js"
+  ]
+}

@@ -1,0 +1,21 @@
+# Environment variables (contains secrets)
+.env
+
+# Dependencies
+node_modules/
+
+# OS files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# IDE / editor
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Test coverage output
+coverage/
